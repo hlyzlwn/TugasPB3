@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#51829B"
+        android:fontFamily="@font/atomic_age"
+        android:gravity="center"
+        android:text="SVT STORE"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/toko1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Toko Album Face the Sun"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/tittle"
+        app:layout_constraintTop_toBottomOf="@+id/tittle" />
+
+    <ImageButton
+        android:id="@+id/gambartoko1"
+        android:layout_width="260dp"
+        android:layout_height="243dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:foregroundGravity="center"
+        app:srcCompat="@drawable/toko1"
+        app:layout_constraintStart_toStartOf="@+id/toko1"
+        app:layout_constraintTop_toBottomOf="@+id/toko1" />
+
+    <TextView
+        android:id="@+id/toko2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Toko Album An Ode"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/toko1"
+        app:layout_constraintTop_toBottomOf="@+id/gambartoko1" />
+
+    <ImageButton
+        android:id="@+id/gambartoko2"
+        android:layout_width="262dp"
+        android:layout_height="224dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:foregroundGravity="center"
+        app:layout_constraintStart_toStartOf="@+id/toko2"
+        app:layout_constraintTop_toBottomOf="@+id/toko2"
+        app:srcCompat="@drawable/toko2" />
+
+    <TextView
+        android:id="@+id/toko3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Artis-Made Collection by SVT"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gambartoko2" />
+
+    <ImageButton
+        android:id="@+id/gambartoko3"
+        android:layout_width="202dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center"
+        app:srcCompat="@drawable/toko3"
+        app:layout_constraintStart_toStartOf="@+id/toko3"
+        app:layout_constraintTop_toBottomOf="@+id/toko3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ArtisCollectionActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="360dp"
+            android:layout_height="157dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="360dp"
+                android:layout_height="157dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="27dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ac1" />
+
+                <TextView
+                    android:id="@+id/tvnama1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/imageView1"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:gravity="center"
+                    android:text="Pluffy Toram and BL"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvdesc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvnama1"
+                    android:layout_toEndOf="@id/imageView1"
+                    android:gravity="clip_horizontal"
+                    android:text="Boneka mixof tupai yang sedang memeluk blanket berwarna kuning diberi nama Jjong Toram by Joenghan "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/acme"/>
+
+                <TextView
+                    android:id="@+id/tvharga1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvdesc1"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/imageView1"
+                    android:fontFamily="@font/anton"
+                    android:text="Rp 1.120.000"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="360dp"
+            android:layout_height="157dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1">
+
+            <RelativeLayout
+                android:layout_width="360dp"
+                android:layout_height="157dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="27dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ac2" />
+
+                <TextView
+                    android:id="@+id/tvnama2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/imageView2"
+                    android:gravity="center"
+                    android:text="Domino Glass Set"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvdesc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvnama2"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/imageView2"
+                    android:fontFamily="@font/acme"
+                    android:gravity="clip_horizontal"
+                    android:text="Domino glass set yang berisi gelas bir 500ml, samoek 280ml, dan soju 50ml by Scoups."
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvharga2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvdesc2"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/imageView2"
+                    android:text="Rp 1.150.000"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/anton"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="360dp"
+            android:layout_height="157dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <RelativeLayout
+                android:layout_width="360dp"
+                android:layout_height="157dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="27dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ac3" />
+
+                <TextView
+                    android:id="@+id/tvnama3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/imageView3"
+                    android:gravity="center"
+                    android:text="Parfum DIY Kit"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tvdesc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvnama3"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/imageView3"
+                    android:gravity="clip_horizontal"
+                    android:text="Parfum DIY kit berisi 6 wewangian yang dipilih secara pribadi dan diberi nama sendiri by Joshua."
+                    android:textSize="14sp"
+                    android:fontFamily="@font/acme"/>
+
+                <TextView
+                    android:id="@+id/tvharga3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvdesc3"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/imageView3"
+                    android:text="Rp 1.130.000"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/anton"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="360dp"
+            android:layout_height="157dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+            <RelativeLayout
+                android:layout_width="360dp"
+                android:layout_height="157dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="27dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ac4" />
+
+                <TextView
+                    android:id="@+id/tvnama4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/imageView4"
+                    android:gravity="center"
+                    android:text="O.C.L Phone Case"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tvdesc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvnama4"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toEndOf="@id/imageView4"
+                    android:gravity="clip_horizontal"
+                    android:text="“Open, Close, Lock” adalah 3 nama dari phone case by Jun."
+                    android:textSize="14sp"
+                    android:fontFamily="@font/acme" />
+
+                <TextView
+                    android:id="@+id/tvharga4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvdesc4"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/imageView4"
+                    android:text="Rp 870.000"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/anton"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="360dp"
+            android:layout_height="157dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+            <RelativeLayout
+                android:layout_width="360dp"
+                android:layout_height="157dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="27dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ac5" />
+
+                <TextView
+                    android:id="@+id/tvnama5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/imageView5"
+                    android:gravity="center"
+                    android:text="Plush Tamtam"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tvdesc5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvnama5"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@id/imageView5"
+                    android:gravity="clip_horizontal"
+                    android:text="Boneka harimau yang memiliki perut seperti hamster diberi nama TamTam by Hoshi."
+                    android:textSize="14sp"
+                    android:fontFamily="@font/acme"/>
+
+                <TextView
+                    android:id="@+id/tvharga5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvdesc5"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/imageView5"
+                    android:text="Rp 1.100.000"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/anton"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+

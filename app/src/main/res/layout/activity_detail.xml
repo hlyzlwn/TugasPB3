@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/tvnama"
+        android:layout_width="253dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="25dp"
+        android:scaleType="fitCenter"
+        android:fontFamily="@font/alfa_slab_one"
+        android:textSize="25sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="239dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvnama"
+        app:layout_constraintStart_toStartOf="@+id/tvnama"
+        app:layout_constraintTop_toTopOf="@+id/tvnama" />
+
+    <TextView
+        android:id="@+id/tvdesc"
+        android:layout_width="359dp"
+        android:layout_height="305dp"
+        android:layout_marginTop="212dp"
+        android:fontFamily="@font/acme"
+        android:gravity="clip_horizontal"
+        android:scaleType="fitCenter"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tvharga"
+        android:layout_width="167dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="328dp"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvdesc"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/tvdesc"
+        app:layout_constraintTop_toTopOf="@+id/tvdesc" />
+
+    <Button
+        android:id="@+id/btnshare"
+        android:layout_width="176dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
+        android:text="SHARE"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvharga"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/tvharga"
+        app:layout_constraintTop_toTopOf="@+id/tvharga" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
